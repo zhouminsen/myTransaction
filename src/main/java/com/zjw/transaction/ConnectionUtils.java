@@ -15,9 +15,9 @@ public class ConnectionUtils {
     //静态代码块,设置连接数据库的参数
     static {
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/test");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/web");
         dataSource.setUsername("root");
-        dataSource.setPassword("123456");
+        dataSource.setPassword("root");
     }
 
 
