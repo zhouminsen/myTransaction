@@ -7,5 +7,5 @@ import java.sql.SQLException;
  */
 public interface UserService {
 
-    void add(CalcCount calcCount) throws SQLException;
+    void add(User user) throws SQLException;
 }

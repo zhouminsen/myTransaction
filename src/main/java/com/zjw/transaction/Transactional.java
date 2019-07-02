@@ -8,7 +8,7 @@ import java.lang.annotation.Target;
 /**
  * Created by zhoum on 2019-06-28.
  */
-@Target(ElementType.METHOD)
+@Target({ElementType.METHOD, ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Transactional {
 

@@ -5,7 +5,7 @@ import lombok.Data;
 import java.io.Serializable;
 
 @Data
-public class CalcCount implements Serializable {
+public class User implements Serializable {
 
 
     private static final long serialVersionUID = -8098570595898776365L;
@@ -14,10 +14,6 @@ public class CalcCount implements Serializable {
      */
     private Integer id;
 
-    /**
-     * 库存
-     */
-    private Integer storeCount;
 
     /**
      * 名称
@@ -27,7 +23,7 @@ public class CalcCount implements Serializable {
     /**
      * 版本号
      */
-    private Integer version;
+    private Integer age;
 
     public Integer getId() {
         return id;
@@ -35,14 +31,6 @@ public class CalcCount implements Serializable {
 
     public void setId(Integer id) {
         this.id = id;
-    }
-
-    public Integer getStoreCount() {
-        return storeCount;
-    }
-
-    public void setStoreCount(Integer storeCount) {
-        this.storeCount = storeCount;
     }
 
     public String getName() {
@@ -53,11 +41,11 @@ public class CalcCount implements Serializable {
         this.name = name;
     }
 
-    public Integer getVersion() {
-        return version;
+    public Integer getAge() {
+        return age;
     }
 
-    public void setVersion(Integer version) {
-        this.version = version;
+    public void setAge(Integer age) {
+        this.age = age;
     }
 }
